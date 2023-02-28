@@ -19,10 +19,10 @@ namespace FooBarQix
         [TestCase("303", "FooFoo*Foo")]
         [TestCase("105", "FooBarQix*Bar")]
         [TestCase("10101", "FooQix**")]
-        public void testZeroes(string input, string output)
+        public void testZeroes(string input, string expected)
         {
             Compute compute = new Compute();
-            Assert.AreEqual(output, compute.compute(input));
+            Assert.AreEqual(expected, compute.compute(input));
         }
 
     }
