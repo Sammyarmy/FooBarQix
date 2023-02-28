@@ -47,6 +47,10 @@ namespace FooBarQix
                     output = string.Concat(output, "Qix");
                     isTriggered = true;
                 }
+                if (item == '0')
+                {
+                    output = string.Concat(output, "*");
+                }    
             }
 
             if (!isTriggered)
